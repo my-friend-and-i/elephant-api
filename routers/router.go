@@ -55,7 +55,15 @@ func InitRouter() *gin.Engine {
 			problem.GET("/detail", controllers.GetMovieDetail)
 			problem.POST("/create", controllers.PostCreateMovie)
 			problem.POST("/update", controllers.PostUpdateMovie)
-			problem.POST("/delete", controllers.PostMovieProblem)
+			problem.POST("/delete", controllers.PostDeleteMovie)
+		}
+		cinema := v1.Group("/cinema")
+		{
+			problem.GET("/list", controllers.GetCinemaList)
+			problem.GET("/detail", controllers.GetCinemaDetail)
+			problem.POST("/create", controllers.PostCreateCinema)
+			problem.POST("/update", controllers.PostUpdateCinema)
+			problem.POST("/delete", controllers.PostDeleteCinema)
 		}
 		news := v1.Group("/news")
 		{
