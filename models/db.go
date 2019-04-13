@@ -7,10 +7,6 @@ import (
 
 const (
 	UserTableName     = "user"
-	ProblemTableName  = "problem"
-	ContestTableName  = "contest"
-	SolutionTableName = "solution"
-	NewsTableName     = "new"
 )
 
 var db *gorm.DB

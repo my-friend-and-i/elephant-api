@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/gin-gonic/gin"
-	"gin-demo/common/errCode"
+	"elephant-api/common/errCode"
 )
 
 func Response(c *gin.Context, httpCode, code int, data interface{}) {

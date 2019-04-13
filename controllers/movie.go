@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"gin-demo/common/errCode"
-	"gin-demo/models"
+	"elephant-api/common/errCode"
+	"elephant-api/models"
 	"strconv"
 )
 
@@ -82,26 +82,26 @@ func PostCreateProblem(c *gin.Context) {
 	}
 
 	movie := models.Movie{
-		Actors        req.Actors
-		Brief       req.Brief
-		Caption  req.Actors
-		DefaultCover req.DefaultCover
-		Directors req.Directors
-		FundMiniFlag       req.FundMiniFlag
-		FundNumLimit       req.FundNumLimit
-		GuideContent       req.GuideContent
-		GuideScore       req.GuideScore
-		GuideTitle       req.GuideTitle
-		GuideUrl       req.GuideUrl
-		MovieId       req.MovieId
-		Plot       req.Plot
-		Poster       req.Poster
-		Rating       req.Rating
-		Title       req.Title
-		TitleSlogan       req.TitleSlogan
-		Trailer       req.Trailer
-		WantSees       req.WantSees
-		State       req.State
+		Actors:        req.Actors,
+		Brief:       req.Brief,
+		Caption:  req.Actors,
+		DefaultCover: req.DefaultCover,
+		Directors: req.Directors,
+		FundMiniFlag:       req.FundMiniFlag,
+		FundNumLimit:       req.FundNumLimit,
+		GuideContent:       req.GuideContent,
+		GuideScore:       req.GuideScore,
+		GuideTitle:      req.GuideTitle,
+		GuideUrl:       req.GuideUrl,
+		MovieId:       req.MovieId,
+		Plot:       req.Plot,
+		Poster:       req.Poster,
+		Rating:       req.Rating,
+		Title:       req.Title,
+		TitleSlogan:       req.TitleSlogan,
+		Trailer:       req.Trailer,
+		WantSees:       req.WantSees,
+		State:       req.State,
 	}
 
 	fmt.Println(movie)
@@ -123,26 +123,26 @@ func PostUpdateMovie(c *gin.Context) {
 
 	movie := models.Movie{
 		ID:           req.ID,
-		Actors        req.Actors
-		Brief       req.Brief
-		Caption  req.Actors
-		DefaultCover req.DefaultCover
-		Directors req.Directors
-		FundMiniFlag       req.FundMiniFlag
-		FundNumLimit       req.FundNumLimit
-		GuideContent       req.GuideContent
-		GuideScore       req.GuideScore
-		GuideTitle       req.GuideTitle
-		GuideUrl       req.GuideUrl
-		MovieId       req.MovieId
-		Plot       req.Plot
-		Poster       req.Poster
-		Rating       req.Rating
-		Title       req.Title
-		TitleSlogan       req.TitleSlogan
-		Trailer       req.Trailer
-		WantSees       req.WantSees
-		State       req.State
+		Actors:        req.Actors,
+		Brief:       req.Brief,
+		Caption:  req.Actors,
+		DefaultCover: req.DefaultCover,
+		Directors: req.Directors,
+		FundMiniFlag:       req.FundMiniFlag,
+		FundNumLimit:       req.FundNumLimit,
+		GuideContent:       req.GuideContent,
+		GuideScore:       req.GuideScore,
+		GuideTitle:      req.GuideTitle,
+		GuideUrl:       req.GuideUrl,
+		MovieId:       req.MovieId,
+		Plot:       req.Plot,
+		Poster:       req.Poster,
+		Rating:       req.Rating,
+		Title:       req.Title,
+		TitleSlogan:       req.TitleSlogan,
+		Trailer:       req.Trailer,
+		WantSees:       req.WantSees,
+		State:       req.State,
 	}
 
 	fmt.Println(movie)

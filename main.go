@@ -3,8 +3,8 @@ package main
 import (
 	log "github.com/cihub/seelog"
 	"github.com/spf13/viper"
-	"gin-demo/models"
-	"gin-demo/routers"
+	"elephant-api/models"
+	"elephant-api/routers"
 )
 
 const (

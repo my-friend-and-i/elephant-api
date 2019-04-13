@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"gin-demo/common/errCode"
-	"gin-demo/models"
+	"elephant-api/common/errCode"
+	"elephant-api/models"
 	"strconv"
 )
 
@@ -78,22 +78,22 @@ func PostCreateCinema(c *gin.Context) {
 	}
 
 	cinema := models.Cinema{
-		AccountOwner        req.AccountOwner
-		Address       req.Address
-		Area  req.Area
-		BankAccount req.BankAccount
-		BankName req.BankName
-		CinemaId       req.CinemaId
-		CinemaName       req.CinemaName
-		City       req.City
-		ContactName       req.ContactName
-		ContactPhone       req.ContactPhone
-		Region       req.Region
-		Province       req.Province
-		MinPrice       req.MinPrice
-		MinAudience       req.MinAudience
-		TotalNumber       req.TotalNumber
-		State       req.State
+		AccountOwner:        req.AccountOwner,
+		Address:       req.Address,
+		Area:  req.Area,
+		BankAccount: req.BankAccount,
+		BankName: req.BankName,
+		CinemaId:       req.CinemaId,
+		CinemaName:       req.CinemaName,
+		City:       req.City,
+		ContactName:       req.ContactName,
+		ContactPhone:       req.ContactPhone,
+		Region:       req.Region,
+		Province:       req.Province,
+		MinPrice:       req.MinPrice,
+		MinAudience:       req.MinAudience,
+		TotalNumber:       req.TotalNumber,
+		State:       req.State,
 	}
 
 	fmt.Println(cinema)
@@ -115,22 +115,22 @@ func PostUpdateCinema(c *gin.Context) {
 
 	cinema := models.Cinema{
 		ID:           req.ID,
-		AccountOwner        req.AccountOwner
-		Address       req.Address
-		Area  req.Area
-		BankAccount req.BankAccount
-		BankName req.BankName
-		CinemaId       req.CinemaId
-		CinemaName       req.CinemaName
-		City       req.City
-		ContactName       req.ContactName
-		ContactPhone       req.ContactPhone
-		Region       req.Region
-		Province       req.Province
-		MinPrice       req.MinPrice
-		MinAudience       req.MinAudience
-		TotalNumber       req.TotalNumber
-		State       req.State
+		AccountOwner:        req.AccountOwner,
+		Address:       req.Address,
+		Area:  req.Area,
+		BankAccount: req.BankAccount,
+		BankName: req.BankName,
+		CinemaId:       req.CinemaId,
+		CinemaName:       req.CinemaName,
+		City:       req.City,
+		ContactName:       req.ContactName,
+		ContactPhone:       req.ContactPhone,
+		Region:       req.Region,
+		Province:       req.Province,
+		MinPrice:       req.MinPrice,
+		MinAudience:       req.MinAudience,
+		TotalNumber:       req.TotalNumber,
+		State:       req.State,
 	}
 
 	fmt.Println(cinema)
